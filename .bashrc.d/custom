@@ -1,3 +1,0 @@
-export EDITOR=hx
-export HISTSIZE=-1
-export bash_prompt_color_force=yes

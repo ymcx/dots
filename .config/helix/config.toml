@@ -1,7 +1,10 @@
 theme = "adwaita-dark"
 
-editor.auto-format = false
-editor.continue-comments = false
-editor.auto-save.focus-lost = true
-editor.completion-timeout = 0
-editor.completion-trigger-len = 1
+[editor]
+auto-format = false
+continue-comments = false
+auto-save.focus-lost = true
+completion-timeout = 0
+completion-trigger-len = 1
+color-modes = true
+end-of-line-diagnostics = "hint"

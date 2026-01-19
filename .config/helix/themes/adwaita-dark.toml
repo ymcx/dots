@@ -1,8 +1,0 @@
-inherits = "adwaita-dark"
-
-"ui.linenr.selected" = { fg = "light_7", bg = "libadwaita_dark", modifiers = [
-  "bold",
-] }
-
-[palette]
-libadwaita_dark = "#1d1d20"
