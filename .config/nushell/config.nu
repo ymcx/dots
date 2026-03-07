@@ -1,5 +1,4 @@
 $env.CARAPACE_MATCH = 1
-$env.COLORTERM = "truecolor"
 $env.EDITOR = "hx"
 $env.PROMPT_COMMAND_RIGHT = ""
 $env.config.completions.external.completer = {|spans| carapace $spans.0 nushell ...$spans | from json}
