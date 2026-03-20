@@ -1,7 +1,22 @@
+let prompt = {
+  let color = if SSH_CLIENT in $env {
+    "purple_bold"
+  } else {
+    "green_bold"
+  }
+
+  (ansi $color)(pwd | str replace $env.HOME "~")(ansi reset)
+}
+
+let completer = {|spans|
+  carapace $spans.0 nushell ...$spans | from json
+}
+
 $env.CARAPACE_MATCH = 1
 $env.EDITOR = "hx"
+$env.PROMPT_COMMAND = $prompt
 $env.PROMPT_COMMAND_RIGHT = ""
-$env.config.completions.external.completer = {|spans| carapace $spans.0 nushell ...$spans | from json}
+$env.config.completions.external.completer = $completer
 $env.config.history.file_format = "sqlite"
 $env.config.history.isolation = true
 $env.config.show_banner = false

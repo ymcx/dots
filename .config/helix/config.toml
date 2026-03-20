@@ -2,5 +2,4 @@ editor.auto-format = false
 editor.auto-save.focus-lost = true
 editor.completion-timeout = 0
 editor.continue-comments = false
-editor.middle-click-paste = false
 theme = "adwaita-dark"
