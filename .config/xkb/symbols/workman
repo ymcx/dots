@@ -1,6 +1,0 @@
-partial alphanumeric_keys
-xkb_symbols "basic" {
-   include "us(workman)"
-   key <CAPS> {[odiaeresis, Odiaeresis]};
-   key <LSGT> {[adiaeresis, Adiaeresis]};
-};
