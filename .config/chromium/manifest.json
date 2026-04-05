@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "name": "Real Nord",
+  "description": "A Real Nord theme by yours truly",
+  "theme": {
+    "colors": {
+      "background_tab": [46, 52, 64],
+      "background_tab_inactive": [46, 52, 64],
+      "background_tab_incognito": [46, 52, 64],
+      "background_tab_incognito_inactive": [46, 52, 64],
+      "button_background": [46, 52, 64],
+      "frame": [46, 52, 64],
+      "frame_inactive": [46, 52, 64],
+      "frame_incognito": [46, 52, 64],
+      "frame_incognito_inactive": [46, 52, 64],
+      "ntp_background": [46, 52, 64],
+      "omnibox_background": [46, 52, 64],
+      "bookmark_text": [216, 222, 233],
+      "ntp_header": [216, 222, 233],
+      "ntp_link": [216, 222, 233],
+      "ntp_text": [216, 222, 233],
+      "omnibox_text": [216, 222, 233],
+      "tab_background_text": [216, 222, 233],
+      "tab_background_text_inactive": [216, 222, 233],
+      "tab_background_text_incognito": [216, 222, 233],
+      "tab_background_text_incognito_inactive": [216, 222, 233],
+      "tab_text": [216, 222, 233],
+      "toolbar_button_icon": [216, 222, 233],
+      "toolbar_text": [216, 222, 233],
+      "toolbar": [59, 66, 82]
+    }
+  }
+}
