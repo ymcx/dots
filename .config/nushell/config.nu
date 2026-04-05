@@ -8,7 +8,6 @@ let completer = {|spans|
   carapace $spans.0 nushell ...$spans | from json
 }
 
-$env.CARAPACE_LENIENT = 1
 $env.CARAPACE_MATCH = 1
 $env.EDITOR = "hx"
 $env.PROMPT_COMMAND = $prompt
