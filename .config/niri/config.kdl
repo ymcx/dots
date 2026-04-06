@@ -16,7 +16,7 @@ binds {
     XF86MonBrightnessUp allow-when-locked=true { spawn "thinkbright" "+"; }
     XF86MonBrightnessDown allow-when-locked=true { spawn "thinkbright" "-"; }
 
-    Super+Q repeat=false { close-window; }
+    Super+Q { close-window; }
 
     Super+Left        { focus-column-left;  }
     Super+Shift+Left  {  move-column-left;  }
@@ -46,9 +46,6 @@ binds {
     Super+WheelScrollUp         cooldown-ms=150 {          focus-workspace-up;   }
     Super+Shift+WheelScrollUp   cooldown-ms=150 { move-column-to-workspace-up;   }
 
-    Super+BracketLeft  { consume-or-expel-window-left; }
-    Super+BracketRight { consume-or-expel-window-right; }
-    
     F11 { fullscreen-window; }
 
     Super+F { maximize-column; }
@@ -81,7 +78,7 @@ hotkey-overlay {
 
 input {
     keyboard {
-        repeat-delay 200
+        repeat-delay 300
     }
     touchpad {
         natural-scroll
@@ -111,8 +108,7 @@ layout {
         off
     }
     background-color "#2E3440"
-    default-column-display "tabbed"
-    gaps 16
+    gaps 8
 }
 
 overview {
@@ -124,8 +120,8 @@ recent-windows {
 }
 
 window-rule {
-    match app-id="^chromium$"
-    scroll-factor 0.2
+    clip-to-geometry true
+    geometry-corner-radius 8
 }
 
 prefer-no-csd
