@@ -1,4 +1,4 @@
-theme = "nord"
+theme = "jetbrains_dark"
 
 [editor]
 auto-format = false
@@ -6,5 +6,4 @@ auto-save.focus-lost = true
 color-modes = true
 completion-timeout = 5
 continue-comments = false
-end-of-line-diagnostics = "hint"
 middle-click-paste = false
